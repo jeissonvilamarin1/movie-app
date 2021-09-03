@@ -1,11 +1,9 @@
 import {data} from "./data.js";
 
 //slider
-//seleccionar los divs y botones
 const slider = document.querySelector("#slider");
 let sliderSection = document.querySelectorAll(".slider-section");
 let sliderSectionLast = sliderSection[sliderSection.length - 1];
-
 const btnLeft = document.querySelector("#btn-left");
 const btnRight = document.querySelector("#btn-right");
 
