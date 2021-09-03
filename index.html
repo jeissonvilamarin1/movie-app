@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Peliculas para ti</title>
+  </head>
+  <body id="body">
+    <header>
+      <nav class="menu">
+        <ul class="logo">
+          <a href="#"
+            ><img
+              src="./images/camara-de-video.svg"
+              alt="logo peliculas para ti"
+          /></a>
+        </ul>
+        <ul class="home">
+          <a href="#">Inicio</a>
+        </ul>
+        <ul class="register">
+          <a href="#" id="register-btn">Registro</a>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="slider-container">
+      <div class="slider" id="slider">
+        <div class="slider-section">
+          <img
+            src="./images/shang-chi.jpg"
+            alt="shang chi movie"
+            class="slider-img"
+          />
+        </div>
+        <div class="slider-section">
+          <img
+            src="./images/black-widow.jpg"
+            alt="black widow movie"
+            class="slider-img"
+          />
+        </div>
+        <div class="slider-section">
+          <img
+            src="./images/spiderman.jpg"
+            alt="spiderman movie"
+            class="slider-img"
+          />
+        </div>
+        <br />
+        <a class="slider-btn prev" id="btn-left"><</a>
+        <a class="slider-btn next" id="btn-right">></a>
+      </div>
+    </div>
+
+    <div class="cards" id="cards"></div>
+
+    <div id="details-page">
+      <div id="card-detail">
+        <form> 
+          <button type="button" id="close">X</button>
+        </form>
+        <div id="card-body">
+          <p id="card-name">Movie</p>
+          <img src="" alt="" id="card-img" />
+          <p id="card-title">Movie title</p>
+          <p id="card-year">Movie year</p>
+          <p id="card-description">Movie description</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="register-page" id="register-page">
+      <form class="register-detail">
+        <button type="button" id="close-register">X</button>
+        <h1>Formulario de Registro</h1>
+        <div class="form-input">
+          <label>Nombre</label>
+          <input type="text" id="inputName" required>
+        </div>
+        <div class="form-input">
+          <label>Apellido</label>
+          <input type="text" id="inputLastName" required>
+        </div>
+        <div class="form-input">
+          <label>Telefono</label>
+          <input type="text" id="inputPhone" required>
+        </div>
+        <div class="form-input">
+          <label>Direccion</label>
+          <input type="text" id="inputAddress" required>
+        </div>
+        <div class="form-input">
+          <label>Observaciones</label>
+          <input type="text" id="inputObservations" required>
+        </div>
+        <div class="form-input">
+          <button type="button" id="send-btn">Enviar</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="./script.js" type="module"></script>
+    <script src="./data.js" type="module"></script>
+  </body>
+</html>
